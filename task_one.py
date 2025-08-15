@@ -1,44 +1,118 @@
-import requests
+
+"""
+----------------------
+PROBLEM STATEMENT
+----------------------
+
+
+The Star Wars API lists 82 main characters in the Star Wars saga.
+
+For the first task, we would like you to use a random number generator
+that picks a number between 1-82.
+
+Using these random numbers you will be pulling 15 characters
+from the API using Python.
+
+"""
+
 import random
-import json
+import argparse
 
-# After import 2 blank line as per peps8 standard
-def generate_15_random_numbers():
-    """produce 15 random number"""
+import requests
 
-    result = [random.randint(1,83) for i in range(1,16)]    #list compreshion
+from utils.timing import timeit
+from utils.randgen import ProduceChars
+
+
+def generate_random_numbers(n: int = 15) -> list:
+    """
+    Generates random number for given integer argument.
+    Args:
+        n: how many number do you want
+
+    Returns: list of random numbers
+
+    """
+
+    i = 1
+    result = []
+    while i <= n:
+        result.append(random.randint(1, 83))
+        i += 1
     return result
 
-#https://swapi.dev/api/people/1
-def get_url(resourse_id):
-    home_url = "https://swapi.dev"
-    relative_url = "/api/people/{}"
-    absolute_url = home_url + relative_url.format(resourse_id)
+
+def get_url(resource_id: int, resource: str) -> str:
+    """
+
+    Args:
+        resource_id: for complete relative url
+        resource: for complete relative url
+
+    Returns: absolute url
+
+    """
+
+    home_url = "https://swapi.py4e.com"
+    relative_url = "/api/{}/{}"
+    absolute_url = home_url + relative_url.format(resource, resource_id)
     return absolute_url
 
 
+@timeit
+def task_one():
+    parser = argparse.ArgumentParser(
+        prog="starwarsAPI",
+        usage="Fetches resources from swapi.dev based "
+        "on whatever arguments we provide",
+        description="It uses random number generator and uses requests library "
+        "to get values from the swapi.dev",
+    )
 
-if __name__ == '__main__':
-    resources = generate_15_random_numbers()
+    # we are creating an option to provide count
+    parser.add_argument(
+        "-c", "--count", default=5, help="count of characters to fetch data from"
+    )
+    parser.add_argument("-s", "--start", default=1, help="start of the range")
+    parser.add_argument("-e", "--end", default=83, help="end of the range")
+    parser.add_argument(
+        "-r",
+        "--resource",
+        default="people",
+        help="name of the resource",
+        choices=["people", "films", "starships", "vehicles", "species", "planets"],
+    )
+    arguments = parser.parse_args()
+
+    print(f"parsed arguments are - {arguments}")
+
+    # resources = generate_random_numbers(int(arguments.count))
+
+    obj = ProduceChars(int(arguments.start), int(arguments.end), int(arguments.count))
+
+    resources = [element for element in obj]
     print(resources)
-    print(len(resources))
 
-    print(get_url(100))
+    print(
+        f"[ INFO ] produced {len(resources)}" f" random resource ids in range(1, 83)."
+    )
 
-    data =[]
+    data = []
     for resource_id in resources:
-        url_ = get_url(resource_id)
+        print(f"[ INFO ] fetching data for resource_id {resource_id}...")
+        url_ = get_url(resource_id, arguments.resource)
+
+        # `requests.get()` returns a HttpResponse
         res = requests.get(url_)
-        res_json = res.text
-        res_dict = json.loads(res_json)
-        data.append(res_dict)
 
-    print(data)
+        # getting dict value from response object
+        result = res.json()
 
+        # capturing name from dict object
+        data.append(result.get("name"))
 
-
-
-
+    return data
 
 
-
+if __name__ == "__main__":
+    task_one()
