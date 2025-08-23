@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fa97731-dcda-4e0f-86c2-d2597f9cb14d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pydantic.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/pydantic_demo1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/example.log" beforeDir="false" afterPath="$PROJECT_DIR$/utils/example.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/fetchdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/fetchdata.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,22 +48,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;Python.db_conn_helper.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dml.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task_four.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task_two.executor&quot;: &quot;Run&quot;,
-    &quot;Python.with_multi-threading.executor&quot;: &quot;Run&quot;,
-    &quot;Python.with_multiprocessing.executor&quot;: &quot;Run&quot;,
-    &quot;Python.without_multi-threading.executor&quot;: &quot;Run&quot;,
-    &quot;Python.without_multiprocessing.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Python.db_conn_helper.executor": "Run",
+    "Python.dml.executor": "Run",
+    "Python.task_four.executor": "Run",
+    "Python.task_two.executor": "Run",
+    "Python.with_multi-threading.executor": "Run",
+    "Python.with_multiprocessing.executor": "Run",
+    "Python.without_multi-threading.executor": "Run",
+    "Python.without_multiprocessing.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature1",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Harshdip\PycharmProjects\starwarsAPI\models\datamodels" />
