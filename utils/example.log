@@ -126,3 +126,26 @@ INFO:root: we are hitting - https://swapi.py4e.com/api/vehicles/7/
 INFO:root: success 200
 INFO:root: we are hitting - https://swapi.py4e.com/api/vehicles/8/
 INFO:root: success 200
+INFO:root: we are hitting - https://swapi.py4e.com/api/films
+INFO:root: success 200
+INFO:root: we are hitting - https://swapi.py4e.com/api/people/1
+INFO:root: success 200
+INFO:root: we are hitting - https://swapi.py4e.com/api/people/1
+INFO:root: success 200
+INFO:root: we are hitting - https://swapi.py4e.com/api/people/1
+INFO:root: success 200
+INFO:root: we are hitting - https://swapi.py4e.com/api/films/1
+INFO:root: we are hitting - https://swapi.py4e.com/api/films/1
+INFO:root: success 200
+INFO:root: we are hitting - https://swapi.py4e.com/api/films/1
+INFO:root: success 200
+INFO:root: we are hitting - https://swapi.py4e.com/api/films/1
+INFO:root: success 200
+INFO:root: we are hitting - https://swapi.py4e.com/api/films/1
+INFO:root: success 200
+INFO:root: we are hitting - https://swapi.py4e.com/api/films/1
+INFO:root: success 200
+INFO:root: we are hitting - https://swapi.py4e.com/api/films/1
+INFO:root: success 200
+INFO:root: we are hitting - https://swapi.py4e.com/api/films/1
+INFO:root: success 200

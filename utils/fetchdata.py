@@ -33,6 +33,7 @@ def mylogger(func):
 
 @mylogger
 def hit_url(url : str) -> Optional[Response]:
+    """ hit API endpoint and return response if successful"""
     response = requests.get(url)
     if response.status_code != 200:
         response.raise_for_status()
