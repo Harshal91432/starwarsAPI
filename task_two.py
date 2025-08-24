@@ -18,9 +18,9 @@ movie.
 TODO Exceries (pending) and HR connect project-
 
 Create a command line application of task_two
-python task_two.py people
-python task_two.py planet
-python task_two.py vehicle
+Python task_two.py people
+Python task_two.py planet
+Python task_two.py vehicle
 """
 
 
@@ -29,7 +29,10 @@ python task_two.py vehicle
 import json
 import requests
 
+
 from typing import Dict, List  #this is typing mode
+
+
 from pprint import pprint   # output will be well manner format
 
 from utils.fetchdata import hit_url, fetch_data

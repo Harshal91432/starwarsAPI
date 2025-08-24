@@ -1,4 +1,19 @@
-"""THis is first introduction to pydantic"""
+"""THis is first introduction to pydantic
+
+Request data validation
+Response data validation
+
+
+Sigular and plural urls
+
+HTTP methods
+GET
+Post
+PUt
+patch
+Delete
+
+"""
 
 
 
@@ -15,5 +30,7 @@ class Foo(BaseModel):
 external_data = {"count":100, "size" :30.5}
 
 xyz = Foo(**external_data)
+
+breakpoint()
 
 print(xyz)
