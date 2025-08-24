@@ -29,7 +29,10 @@ Python task_two.py vehicle
 import json
 import requests
 
-from typing import Dict, List  # typing model
+
+from typing import Dict, List  #this is typing mode
+
+
 from pprint import pprint   # output will be well manner format
 
 from utils.fetchdata import hit_url, fetch_data
