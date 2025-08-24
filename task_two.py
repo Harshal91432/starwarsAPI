@@ -18,9 +18,9 @@ movie.
 TODO Exceries (pending) and HR connect project-
 
 Create a command line application of task_two
-python task_two.py people
-python task_two.py planet
-python task_two.py vehicle
+Python task_two.py people
+Python task_two.py planet
+Python task_two.py vehicle
 """
 
 
